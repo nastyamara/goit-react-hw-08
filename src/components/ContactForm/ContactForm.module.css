@@ -1,0 +1,25 @@
+.formContainer {
+    max-width: 200px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.formTitle {
+    display: block;
+}
+
+.formInput {
+    display: block;
+
+}
+
+.formBtn {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
