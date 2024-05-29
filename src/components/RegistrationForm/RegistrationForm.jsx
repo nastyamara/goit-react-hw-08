@@ -3,6 +3,7 @@ import { Formik, Form, Field } from "formik";
 import  { Toaster } from 'react-hot-toast';
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
+import css from "./RegistrationForm.module.css";
 
 
 export default function RegistrationForm() {
@@ -27,18 +28,18 @@ export default function RegistrationForm() {
           }}
         > 
           
-            <Form className='registrationForm' autoComplete="off"> 
-                <label>
-                        <Field className="username" name="name" />
+            <Form className={css.form} autoComplete="off"> 
+                <label className={css.label}>
+                        <Field  name="name" />
                 </label>
                 
             
-                <label>
-                    <Field className="email" name="email" />
+                <label className={css.label}>
+                    <Field name="email" />
                  </label>
                 
-                <label>
-                         <Field  className="password"name="password"  />
+                <label className={css.label}>
+                         <Field  name="password"  />
                  </label>
              
             
